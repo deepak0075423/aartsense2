@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aart Sense Records | Sound with Sense</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8c25f4",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#191022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "sans": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass {
+            background: rgba(25, 16, 34, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(140, 37, 244, 0.2);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(25, 16, 34, 0.4) 0%, rgba(25, 16, 34, 1) 100%);
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary/30">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 glass border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">album</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">Aart Sense Records</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#philosophy">Philosophy</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#work">Work</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#space">The Space</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all transform hover:scale-105">
+                    Book a Session
+                </button>
+<div class="flex gap-2">
+<a class="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">brand_awareness</span>
+</a>
+</div>
+</div>
+</div>
+</header>
+<!-- Immersive Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 hero-gradient z-10"></div>
+<img alt="" class="w-full h-full object-cover" data-alt="Cinematic wide shot of a professional dark recording studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKQshtpNaGhIt-g3Ja_Kns9EPqBRASSwuloNnU2aPH75jsV0cTZET095CfIGACv_7TgT8VkkPm-E8XDAyVYePHEVkb9WjGesp8tmi-Auew0VYwJy5a9mcIEfsCz3dUUQIR0L0g1uhpyAK8psHB7RFhpYDh17Uw97HO9POeO0pgCLHzNb6bF-kmiWGmexVfvNm06eqVS4SpP4XrDp_uRAbiRlAu3x7BWVh12wYVnR8L_WQsFGP_1zw5yaM0xD682Hcsqhg5g5xlpQ"/>
+</div>
+<div class="relative z-20 text-center px-6 max-w-4xl mx-auto">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6 border border-primary/30">
+                Premium Production Studio
+            </span>
+<h1 class="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
+                Sound with <span class="text-primary italic">Sense.</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Elevating your artistic vision through technical mastery and creative intuition. We don't just record audio; we capture souls.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="w-full sm:w-auto px-10 py-5 bg-primary rounded-xl text-white font-bold text-lg hover:shadow-[0_0_40px_rgba(140,37,244,0.4)] transition-all">
+                    Book a Session
+                </button>
+<button class="w-full sm:w-auto px-10 py-5 bg-white/5 border border-white/10 rounded-xl text-white font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-2 group">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">play_circle</span>
+                    Watch Showreel
+                </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+<span class="material-symbols-outlined text-slate-400">expand_more</span>
+</div>
+</section>
+<!-- Philosophy Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto" id="philosophy">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1">
+<div class="relative rounded-2xl overflow-hidden aspect-video group">
+<img alt="" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Artist focusing intensely while playing an instrument in soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWZB4cd3fWM_k-RRuW9QwjNHZW7neIO-s41TdZ_7v54N_ANAI6e1D7IRIXgWoYsDnE5dEkG6dglrJoF4h0xRBPxsJg5ON_hUEi74Dlt4A_IsLPqXmVWHduNCoyFXbAnuDQA2kgB8yoi6J1p2bWCO2QPsfhRCaGvYrRQcOgC2ygeLqgvQaqd8CYZ2LSdgCeabyZSdPXnKAlqcFCce0HnTlJZzuHExOcA4uFwyaTAcRzTUrkn6sXeejqv6pfnU5k666gwdTym2fcnQ"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-8">
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+                    The Aart Sense <br/><span class="text-primary">Philosophy</span>
+</h2>
+<p class="text-lg text-slate-400 leading-relaxed">
+                    Our unique approach to music production blends absolute technical mastery with creative intuition to capture the soul of every performance. We believe the best records are those where the technology becomes invisible, letting the pure emotion of the artist shine through.
+                </p>
+<div class="space-y-6">
+<div class="flex gap-4 p-4 rounded-xl border border-primary/10 bg-primary/5">
+<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+<div>
+<h4 class="font-bold mb-1">Intuitive Production</h4>
+<p class="text-sm text-slate-400">Understanding your sonic identity before we even hit record.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 rounded-xl border border-primary/10 bg-primary/5">
+<span class="material-symbols-outlined text-primary text-3xl">precision_manufacturing</span>
+<div>
+<h4 class="font-bold mb-1">Technical Precision</h4>
+<p class="text-sm text-slate-400">Signal paths designed for maximum clarity and warmth.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Services Section -->
+<section class="py-24 bg-background-dark/50 border-y border-primary/5" id="services">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Core Services</h2>
+<p class="text-slate-400">Professional sonic treatment for every stage of your project.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="glass p-8 rounded-2xl border border-white/5 hover:border-primary/50 transition-all group">
+<div class="mb-6 text-primary">
+<span class="material-symbols-outlined text-5xl">mic</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Recording</h3>
+<p class="text-slate-400 mb-6">Crystal clear capture in our acoustically treated environments using world-class preamps and microphones.</p>
+<ul class="text-sm space-y-3 text-slate-300">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-primary">check_circle</span> Vocal Tracking</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-primary">check_circle</span> Live Band Session</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-primary">check_circle</span> VO &amp; Podcasts</li>
+</ul>
+</div>
+<!-- Service Card 2 -->
+<div class="glass p-8 rounded-2xl border border-white/5 hover:border-primary/50 transition-all group scale-105 bg-primary/5">
+<div class="mb-6 text-primary">
+<span class="material-symbols-outlined text-5xl">equalizer</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Mixing &amp; Mastering</h3>
+<p class="text-slate-400 mb-6">Professional polish for a radio-ready sound that stands out across all playback systems.</p>
+<ul class="text-sm space-y-3 text-slate-300">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-primary">check_circle</span> Analog Summing</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-primary">check_circle</span> Stem Mastering</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-primary">check_circle</span> Dolby Atmos Mixing</li>
+</ul>
+</div>
+<!-- Service Card 3 -->
+<div class="glass p-8 rounded-2xl border border-white/5 hover:border-primary/50 transition-all group">
+<div class="mb-6 text-primary">
+<span class="material-symbols-outlined text-5xl">compost</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Music Production</h3>
+<p class="text-slate-400 mb-6">Full-scale arrangement, beat making, and creative direction from world-class producers.</p>
+<ul class="text-sm space-y-3 text-slate-300">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-primary">check_circle</span> Arrangement</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-primary">check_circle</span> Custom Beats</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-primary">check_circle</span> Sonic Branding</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Work Grid -->
+<section class="py-24 px-6 max-w-7xl mx-auto" id="work">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+<div>
+<h2 class="text-4xl font-bold mb-4">Featured Work</h2>
+<p class="text-slate-400">Recent projects engineered and produced at Aart Sense.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:translate-x-1 transition-all">
+                View Entire Portfolio <span class="material-symbols-outlined">trending_flat</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
+<img alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Vibrant synthwave album cover art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARuPebDQwjg1w7jsyQDaJ9UqKgbhLma8GBp4s_InVaRLc0K_dLy1eWF7OpWfDSsj7DrS47m_G5ecWfvok6AucuyGvOvSMkWG6xyLwFBRJ1BMG_jmmFOW_TKp8a8Dgo91g1uPz32ZimK75GcVz0Tseqb87iazznsbHRxsKAfhwpnEDhkmUcYrdQUg5zcBKKFtdqlCemTqpkwBY3eRB3gtoEzoaaaxIobUN1CSHYHOYzZYNXE8Ug74D9uh0SCY1AQWuTA52CHXC_Nw"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+<button class="bg-primary p-4 rounded-full text-white transform translate-y-4 group-hover:translate-y-0 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
+<img alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Moody jazz club black and white album cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2YcWwaLpruxItzzkyJdvJh0Yk4NusITOdXFwHAEsbJD6CHEFLoCvAyp4gqwDIWfijeMlWDvEOExCYJrZpsyi0d6t1Rw5nzXtV-3RbMAf8xC1_4X5gwWt-jSIsYnDWroCxavfxELZox6dZfFo4zFrl3rqY__YLhsqfE3I2QfUalWXEjv3d5j1Plb-gmgrMy0N54fnFMLLic7B1R1eQeABkkGT8SpqATIa9sWNuDEoKto9nCbzQrhCtJSwT0ThyQiXCYAsCFU356Q"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+<button class="bg-primary p-4 rounded-full text-white transform translate-y-4 group-hover:translate-y-0 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
+<img alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Electronic neon waveform album cover art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKoTyykX1SXFD3asPV-QpyH1J61x-N4_n3HL-bMziRohwaPquBlMcu6H_DYp5RaS9YLQnGrBhSXkzDpy7eSzD977JVRQLCa-05xyKeXewRZCANChR7RTxnDlfngE3Kpe_2ZGurrwuLgoK0fId8bCLC4zZNRvE8t6hLJmdpRuI_B_Qmv347IR8sZn2eG0Ooq27k6nRyscBXMccQcmhLIekAb-ayxAaJpkNeR1FVU0ZVW5LGs3xFfRRyFAoehZJ6TI1YdOgSYmdpwQ"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+<button class="bg-primary p-4 rounded-full text-white transform translate-y-4 group-hover:translate-y-0 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
+<img alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Indie rock gritty band photography album cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFzUMktMIlTnZy8j207gdpLDCc9VbOR_S5ZmCim6vOP8jUyO0Js6HkmGTNHnfwPihpLETHljY5xu7QQoULmoGKu9TVL0NoLdyRfoP8Y2Mfy3hv6g7qognf8zBsCLhX49KhemLvRmSa-16lBt6qKqOz8UpuahI3Edw_7S8Is9_a1GgaheFIhmXhQ7at_2E-qCM-kslvEgzX1GzOznFjyYiaBKuGcU4PKCFgkmATLMEooqEox6lLDVytPN_K39Ug4sKRVVJMZoEUEQ"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+<button class="bg-primary p-4 rounded-full text-white transform translate-y-4 group-hover:translate-y-0 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- The Space Section -->
+<section class="py-24 bg-background-dark" id="space">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-3 gap-8 mb-12">
+<div class="lg:col-span-1 py-12">
+<h2 class="text-4xl font-bold mb-6">The Space</h2>
+<p class="text-slate-400 mb-8 leading-relaxed">
+                        A sanctuary for creativity. Our rooms are designed for comfort and sound, featuring high-end analog gear and modern digital workflows.
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 rounded-xl glass text-center">
+<h4 class="text-2xl font-bold text-primary">A</h4>
+<p class="text-xs uppercase tracking-widest text-slate-500">Live Room</p>
+</div>
+<div class="p-4 rounded-xl glass text-center">
+<h4 class="text-2xl font-bold text-primary">B</h4>
+<p class="text-xs uppercase tracking-widest text-slate-500">Mastering</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+<img alt="" class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all cursor-crosshair" data-alt="Extreme close up of vintage recording console faders" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJN_FG2VqSloiQrB88N_9AdW-Ndx2JqWdgXAcT378MH9-LPQo3-FvLTuxp4oxwxVVP88gqHS0M3A8gx0QfmJQdjtDaBbPK46cAZ_Idsh4FSHLQexprFDOUrUMdDNtHXip858aFBfFp7Vb2uZ6ukReSkqyMIp1Ggt0Mj8mgZFdHxpS01Z4gbTU8UJxFLCbJ7OhOWVmFrTMO-wh51iKDk7GDn_psSs1Ub0dt9Pioc3h3U0d7tyKDnHdm8Ud4Nr2hmgkBuRvTfJVNTA"/>
+<img alt="" class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all cursor-crosshair" data-alt="Collection of boutique electric guitars on a rack" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG-LO56HS-JCaiAne68S3Xe2NQ_HuLKWI6bg-0xiW_-ECf615-82oshIil8XtdVP53wwPxFuq-Sv_7XL2w_anhPrJFIyVXGOCGymkzZ626szbfeZV5WjHWLndff0CApx5WXB-AvhQ5n4OeMkIpNWf4g_OtHRKBl89npRe-SlCZ6JxXfhMG073-1Xp_hwzRUlbJH71nUKP3d5KgyVSpVKsR2wvGXP5LQlFsrv0hrYTnaiFGn8iZyfFLy4QczdLLpnHZ1-1B1P5WZQ"/>
+<img alt="" class="w-full h-64 md:col-span-2 object-cover rounded-xl grayscale hover:grayscale-0 transition-all cursor-crosshair" data-alt="Wide shot of a recording studio control room at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhhQCwD84fvzLGZdT-B7OyQQ1C6Xe1IjkS7__MySHuVMss2-EKzFhoPB5c4OBYK52f3HvC8WYUJYEeYL-6uoI91w-PPymN0CSZbj4XNWS6BhaR3oTYTk-q1c7x5qo1d3sWhYwStiqywMU9Rt7t88JgK1PX3iav6YcxSw0mX9uqf_Y_GVyTMrlfxbJD9OoDDzkXBRoAfX2J3RHBd9Ji9PajsPNparlvGkFyl44PBOgytI7RJo6zemPq1RMMw9ntzBLeTfHNamA3Ug"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto overflow-hidden">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold">Voices of the Artists</h2>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<div class="max-w-md p-8 glass rounded-2xl relative">
+<span class="material-symbols-outlined text-primary text-6xl absolute -top-4 -left-4 opacity-20">format_quote</span>
+<p class="text-lg italic text-slate-300 mb-6">
+                    "Aart Sense didn't just record my album; they helped me find my sound. The attention to detail in the mix is something I've never experienced before."
+                </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 overflow-hidden">
+<img alt="" data-alt="Headshot of a modern female indie artist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5hAzqyLstPyaXp3bfwvqoPBlzTtQ5wR2a1QhPko5wrcl0HCOnxHhd1PUA7cv4tCdOUtc73beQxwOi7GF__uX3sUxwxIQTRIjeigVr_61qM39bydqcDC1tsS1MMFUGF_sLA47SxVphcnfKUwI25Qi3Y6MGqKTnPacGgayfwGdMnSeDKQ-b0Oj1mEEWP53XaNqgTG4FWA1ak0kg1x_VYLIGViZT5gSv_GfEsA0m-7-dLONg_HiauRD7omwJTOU9g0PPyk-UIP4Fiw"/>
+</div>
+<div>
+<h5 class="font-bold">LUNA SHORE</h5>
+<p class="text-xs text-slate-500 uppercase tracking-widest">Singer-Songwriter</p>
+</div>
+</div>
+</div>
+<div class="max-w-md p-8 glass rounded-2xl relative">
+<span class="material-symbols-outlined text-primary text-6xl absolute -top-4 -left-4 opacity-20">format_quote</span>
+<p class="text-lg italic text-slate-300 mb-6">
+                    "The atmosphere is electric. Every time I walk in, I feel inspired to create something bold. Technically and creatively, they are unmatched."
+                </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 overflow-hidden">
+<img alt="" data-alt="Portrait of a male hip-hop producer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKiUnEm4d_Hc4exwUNvy3kqDtqZM2uU4gOqKv2f3J98JIdarjFStSUhSKMJfWhzWfFu_hFzrddGGU64VZGf99XRRQBSUmTuiJ6Z_pgzAK3na56xh4kPNh6x_aJBOYqc88A3OimemdT25-F8C4TaN28idLf2CjUwysccILvViZWQ7OyJ-PEM_i5Ma6_i-3yQCvZo_9GeI-TE8t60z5hmbLb43OUJmaav0Wd7HCoK89Wisl9_JbL1eB6kpPkYgHzEbWWTsp2pzHsXQ"/>
+</div>
+<div>
+<h5 class="font-bold">MARCUS VANE</h5>
+<p class="text-xs text-slate-500 uppercase tracking-widest">Producer &amp; DJ</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter & Footer -->
+<footer class="bg-black border-t border-white/5 py-20 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-4 gap-12 mb-20">
+<div class="md:col-span-2">
+<div class="flex items-center gap-3 mb-8">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">album</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tight">Aart Sense Records</h2>
+</div>
+<p class="text-slate-500 max-w-sm mb-8">
+                        The premiere destination for artists seeking more than just a recording. We craft sonic legacies.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">brand_awareness</span>
+</a>
+<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">video_library</span>
+</a>
+<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">headset</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6">Navigation</h4>
+<ul class="space-y-4 text-slate-500 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Philosophy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Artists</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">The Space</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Join the Label</h4>
+<p class="text-sm text-slate-500 mb-6">Get production tips, studio updates, and featured tracks delivered to your inbox.</p>
+<form class="space-y-3">
+<input class="w-full bg-white/5 border-white/10 rounded-lg px-4 py-2.5 text-sm focus:border-primary focus:ring-0 transition-all" placeholder="Email Address" type="email"/>
+<button class="w-full bg-primary py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-12 border-t border-white/5 text-xs text-slate-600">
+<p>© 2024 Aart Sense Records. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-slate-400" href="#">Privacy Policy</a>
+<a class="hover:text-slate-400" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
