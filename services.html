@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Aart Sense Records</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8c25f4",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#191022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white">
+<!-- Top Navigation -->
+<header class="site-header">
+<div class="header-inner">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl font-bold">album</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">Aart Sense <span class="text-primary">Records</span></h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="aboutus.html">About</a>
+<a class="text-sm font-medium text-primary" data-nav-link href="services.html">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="faq.html">FAQ</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="contactus.html">Contact</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="investor.html">Investors</a>
+</nav>
+<div class="flex items-center gap-3">
+<a href="contactus.html" class="bg-primary hover:bg-primary/80 text-white px-6 py-2.5 rounded-lg font-bold text-sm transition-all shadow-lg shadow-primary/20">
+                Book a Session
+            </a>
+<button class="md:hidden p-2 rounded-lg hover:bg-primary/10 text-primary transition-colors" data-menu-toggle aria-label="Toggle menu">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden md:hidden" data-mobile-menu>
+<nav class="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-4">
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="aboutus.html">About</a>
+<a class="text-sm font-medium text-primary py-2" data-nav-link href="services.html">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="faq.html">FAQ</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="contactus.html">Contact</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="investor.html">Investors</a>
+<a href="contactus.html" class="bg-primary text-white px-6 py-3 rounded-lg text-sm font-bold text-center mt-2">Book a Session</a>
+</nav>
+</div>
+<main class="relative">
+<!-- Floating Sidebar Nav (Desktop) -->
+<aside class="hidden xl:flex fixed left-10 top-1/2 -translate-y-1/2 flex-col gap-6 z-40">
+<a class="group flex items-center gap-4" href="#recording">
+<span class="h-px w-8 bg-slate-500 group-hover:w-12 group-hover:bg-primary transition-all"></span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-slate-500 group-hover:text-primary transition-colors">01. Recording</span>
+</a>
+<a class="group flex items-center gap-4" href="#mixing">
+<span class="h-px w-8 bg-slate-500 group-hover:w-12 group-hover:bg-primary transition-all"></span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-slate-500 group-hover:text-primary transition-colors">02. Mixing</span>
+</a>
+<a class="group flex items-center gap-4" href="#production">
+<span class="h-px w-8 bg-slate-500 group-hover:w-12 group-hover:bg-primary transition-all"></span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-slate-500 group-hover:text-primary transition-colors">03. Production</span>
+</a>
+</aside>
+<!-- Hero Section -->
+<section class="pt-20 pb-32 px-6 max-w-7xl mx-auto text-center">
+<h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tighter">
+                Precision Meets <span class="text-primary italic">Artistry.</span>
+</h1>
+<p class="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
+                A world-class sonic environment engineered for clarity. Explore our technical specifications and professional workflow standards.
+            </p>
+</section>
+<!-- 01. Recording Section -->
+<section class="py-24 px-6 border-t border-primary/10 spec-grid" id="recording">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
+<div>
+<div class="flex items-center gap-2 text-primary mb-4">
+<span class="material-symbols-outlined">mic</span>
+<span class="text-sm font-bold uppercase tracking-widest">01. Engineering</span>
+</div>
+<h2 class="text-4xl font-bold mb-8">The Recording Environment</h2>
+<p class="text-slate-400 mb-10 leading-relaxed">
+                        Our main live room and isolated vocal booths are floating floors with non-parallel walls, achieving a flat frequency response ideal for high-fidelity capture.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
+<h4 class="font-bold text-primary mb-2">The Vocal Booth</h4>
+<p class="text-sm text-slate-400">Perfectly dry, acoustically treated space for intimate vocals and voiceovers.</p>
+</div>
+<div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
+<h4 class="font-bold text-primary mb-2">Main Live Room</h4>
+<p class="text-sm text-slate-400">Diffusion-heavy 40sqm room for natural drum transients and group recording.</p>
+</div>
+</div>
+<div class="overflow-hidden rounded-xl border border-slate-800">
+<table class="w-full text-left text-sm">
+<thead class="bg-slate-800/50 text-slate-300 uppercase text-[10px] tracking-widest font-bold">
+<tr>
+<th class="p-4">Gear Category</th>
+<th class="p-4">Selection Highlights</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-800">
+<tr>
+<td class="p-4 font-medium">Microphones</td>
+<td class="p-4 text-slate-400">Neumann U87, AKG C414 XLII, Shure SM7B, Coles 4038</td>
+</tr>
+<tr>
+<td class="p-4 font-medium">Preamps</td>
+<td class="p-4 text-slate-400">Neve 1073DPD, Universal Audio 6176, API 3124V</td>
+</tr>
+<tr>
+<td class="p-4 font-medium">Conversion</td>
+<td class="p-4 text-slate-400">Universal Audio Apollo x16 Heritage Edition</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+<div class="relative rounded-xl overflow-hidden aspect-[4/5] bg-slate-900">
+<img alt="Professional studio microphone in a vocal booth" class="w-full h-full object-cover" data-alt="Professional Neumann microphone setup in a dark recording studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAalV-Q5dLs4SIFZ4Xv04NOjUBkK74deGLAA3kVMIrUgp1J5AC8YHoQSzZ4y_2HHjyIOo9qsAcKmNXUh9VGJIidhQaeTkPx2ogHGnyO79PHPjHSGI-B4hTjloi_R7kAkYOeQDacoP0O_0SZ2VYIsI4abc1ZPwtxDIb8XN4-MwnQOS9Y2PZXkOQGgEP2ka2aVdMlGptagRDZ5WjB9W47I2W3pmsW-zo460hrLGX4Dq6zXnVuiVcLmYUd23OhxUQSedt9u9mWkMaUeQ"/>
+<div class="absolute bottom-6 left-6 right-6 p-6 glass-panel rounded-lg">
+<p class="text-xs font-bold text-primary mb-1 uppercase tracking-tighter italic">Currently Active</p>
+<p class="text-lg font-bold">Session A: Vocal Tracking</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 02. Mixing & Mastering Section -->
+<section class="py-24 px-6 bg-slate-900/30" id="mixing">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+<div class="max-w-xl">
+<div class="flex items-center gap-2 text-primary mb-4">
+<span class="material-symbols-outlined">tune</span>
+<span class="text-sm font-bold uppercase tracking-widest">02. Post-Production</span>
+</div>
+<h2 class="text-4xl font-bold">Mixing &amp; Mastering</h2>
+<p class="text-slate-400 mt-4 leading-relaxed">
+                            A hybrid approach combining the warmth of high-end analog outboard gear with the surgical precision of modern digital processing.
+                        </p>
+</div>
+<div class="flex gap-4">
+<div class="flex flex-col items-center">
+<span class="text-[10px] font-bold text-slate-500 uppercase mb-2">Analog Chain</span>
+<div class="flex -space-x-3">
+<div class="size-10 rounded-full border-2 border-background-dark bg-primary flex items-center justify-center text-white text-xs font-bold">SSL</div>
+<div class="size-10 rounded-full border-2 border-background-dark bg-purple-600 flex items-center justify-center text-white text-xs font-bold">API</div>
+<div class="size-10 rounded-full border-2 border-background-dark bg-slate-700 flex items-center justify-center text-white text-xs font-bold">+5</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-6 mb-16">
+<!-- Tech Card 1 -->
+<div class="p-8 rounded-xl bg-background-dark border border-primary/20 hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary mb-4">graphic_eq</span>
+<h3 class="text-xl font-bold mb-3">Surgical EQ</h3>
+<p class="text-sm text-slate-400 leading-relaxed mb-6">Cleaning up resonance and carving space using FabFilter Q3 and Eiosis AirEQ.</p>
+<ul class="text-xs space-y-2 text-slate-500 font-mono">
+<li>- 48dB/oct Slope Cutoffs</li>
+<li>- Mid/Side Processing</li>
+<li>- Dynamic Frequency Clamping</li>
+</ul>
+</div>
+<!-- Tech Card 2 -->
+<div class="p-8 rounded-xl bg-background-dark border border-primary/20 hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary mb-4">compress</span>
+<h3 class="text-xl font-bold mb-3">Tonal Dynamics</h3>
+<p class="text-sm text-slate-400 leading-relaxed mb-6">Controlling peaks while adding character via 1176 and LA-2A hardware clones.</p>
+<ul class="text-xs space-y-2 text-slate-500 font-mono">
+<li>- Parallel Compression</li>
+<li>- Sidechain Ducking</li>
+<li>- Harmonic Saturation</li>
+</ul>
+</div>
+<!-- Tech Card 3 -->
+<div class="p-8 rounded-xl bg-background-dark border border-primary/20 hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary mb-4">waves</span>
+<h3 class="text-xl font-bold mb-3">Spatial Depth</h3>
+<p class="text-sm text-slate-400 leading-relaxed mb-6">Creating 3D soundscapes using Bricasti M7 hardware and Soundtoys echoes.</p>
+<ul class="text-xs space-y-2 text-slate-500 font-mono">
+<li>- Haas Effect Width</li>
+<li>- Convolution Reverbs</li>
+<li>- Micro-shift Stereo Imaging</li>
+</ul>
+</div>
+</div>
+<!-- Equipment Showcase Slider Area -->
+<div class="relative w-full rounded-2xl overflow-hidden h-[400px]">
+<img alt="Mixing console with many knobs and faders" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close up view of professional audio mixing console with glowing LEDs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBRdn-y-q8upfWElfXiCvHqNi9yQkcU3eHrqdxZGbwmsSoiT2MaP4seuUo9j_9eBJYkjwJDxLnR7-Sahzr00r6x8SGgfINlQDrk1yTB4kn4kAL3HPxGafkViu_BWfzO76aSWaqCQfFnCDh1GJFofhRI1vYZuVVJsv8N8wiLZR6X0jRlyBAUBqEzHgOwiv34ULx5FSnZYKt3a0hwodM80a3s6tr6_hCx4g4QtpOT-ThAVE8n-PypOIcHPjcBAw0fUvmT7Yj-4uT5w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h4 class="text-2xl font-bold">The Hybrid Suite</h4>
+<p class="text-slate-300">Genelec 8351B Monitoring + Focal Sub6</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 03. Music Production Section -->
+<section class="py-24 px-6" id="production">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="grid grid-cols-2 gap-4">
+<img alt="Person working on MIDI keyboard and computer" class="rounded-lg w-full aspect-square object-cover border border-slate-800" data-alt="Music producer working on a MIDI keyboard with studio monitors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlM6bfYV6ufeQwzm2Mv6GplSvqw-ZEDliIdLBcHYKrt8AAlPjOIJY8k6jpf_3okxl1eA2wTtPZBGPyh-_bdZYjwhUlooxiYqw5JEoH0Z9X7DaftU4MvzRbb0EYmI-SBCxYF9O5FkZynf3AZeCf88Y3YUswEog3KD_KBa_NgetUGRqpRJNqUx5DaUqxr6rePMjofhdgiNYTWA7HtrpIsr9j4vL_x-yE2a6wVpm3H-5QpbuOVQ_TyApszUpokmRhXemsm0bglr2vBw"/>
+<img alt="Analog synthesizer details" class="rounded-lg w-full aspect-square object-cover border border-slate-800 mt-8" data-alt="Close up of classic analog synthesizer knobs and cables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRkvcB_T3LyAriI76DFpflxgPEueVE3sY70qYsdj0BW0Q1p3SoUnVa2KacojT0WOwJky8Jmyox8Ux3Axf9ZFBNDEBcCV-5AFf-num9bqQ8HK2GByid3BRiTcf8YK13vsf7uZdFtnBbtAuzSaiXLJLbeZF-iq_TmfhNMsxitJiU04BPFPv2LCvRbv5D-nr-wdeT7Jb0WzkVIM6G42syC4yqnxTgWCFL1_0ZBBYkEKMOGbZwiU6ICCtzjlAoDd3p6tQBekkCQDFZHg"/>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="flex items-center gap-2 text-primary mb-4">
+<span class="material-symbols-outlined">auto_fix_high</span>
+<span class="text-sm font-bold uppercase tracking-widest">03. Creative</span>
+</div>
+<h2 class="text-4xl font-bold mb-6">Music Production &amp; Identity</h2>
+<p class="text-slate-400 mb-8 leading-relaxed">
+                        We don't just record sounds; we help craft your identity. From sound design and arrangement to hiring session musicians, we bridge the gap between demo and masterpiece.
+                    </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="size-12 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">library_music</span>
+</div>
+<div>
+<h4 class="font-bold">Sound Design &amp; Synthesis</h4>
+<p class="text-sm text-slate-500">Custom synth patches using Prophet-6, Moog Sub37, and extensive VST libraries.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="size-12 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<div>
+<h4 class="font-bold">Arrangement &amp; Sessions</h4>
+<p class="text-sm text-slate-500">Professional session players for drums, bass, and strings to add organic texture.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="size-12 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">history_edu</span>
+</div>
+<div>
+<h4 class="font-bold">Songwriting Support</h4>
+<p class="text-sm text-slate-500">Lyric development and melodic refinement to ensure your hook stays in their heads.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Deliverables Section -->
+<section class="py-24 px-6 border-t border-primary/10 spec-grid" id="deliverables">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold">Standard Deliverables</h2>
+<p class="text-slate-400 mt-2">The clinical export log of your project assets.</p>
+</div>
+<div class="glass-panel rounded-2xl p-1 md:p-8">
+<div class="bg-background-dark rounded-xl border border-slate-800 p-8 font-mono text-sm overflow-x-auto">
+<div class="flex justify-between border-b border-slate-800 pb-4 mb-4 text-slate-500">
+<span>PROJECT_ID: AART_SENSE_2024</span>
+<span>STATUS: FINAL_EXPORT</span>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<div class="flex gap-2">
+<span class="text-primary">[MIXING]</span>
+<span class="text-slate-300">MAIN_MASTER.WAV</span>
+</div>
+<span class="text-slate-500">24-bit / 48kHz</span>
+</div>
+<div class="flex justify-between items-start">
+<div class="flex gap-2">
+<span class="text-primary">[MIXING]</span>
+<span class="text-slate-300">INSTRUMENTAL_STEM.WAV</span>
+</div>
+<span class="text-slate-500">24-bit / 48kHz</span>
+</div>
+<div class="flex justify-between items-start">
+<div class="flex gap-2">
+<span class="text-primary">[MIXING]</span>
+<span class="text-slate-300">VOCAL_ONLY_ACAPELLA.WAV</span>
+</div>
+<span class="text-slate-500">24-bit / 48kHz</span>
+</div>
+<div class="flex justify-between items-start">
+<div class="flex gap-2">
+<span class="text-primary">[RAW]</span>
+<span class="text-slate-300">DRUM_MULTI_TRACKS.ZIP</span>
+</div>
+<span class="text-slate-500">Individual Stems</span>
+</div>
+<div class="flex justify-between items-start">
+<div class="flex gap-2">
+<span class="text-primary">[DOCS]</span>
+<span class="text-slate-300">SESSION_LOGS.PDF</span>
+</div>
+<span class="text-slate-500">Metadata + Lyrics</span>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-slate-800 text-center text-primary animate-pulse">
+                            &gt;&gt;&gt; ALL SYSTEMS NOMINAL - READY FOR DISTRIBUTION &lt;&lt;&lt;
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-6">
+<div class="max-w-4xl mx-auto glass-panel p-12 rounded-3xl text-center border-2 border-primary/30">
+<h2 class="text-4xl font-bold mb-6">Ready to start your next project?</h2>
+<p class="text-slate-400 mb-10 text-lg">Book a free 15-minute consultation to discuss your technical requirements and creative goals.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary hover:bg-primary/80 text-white px-10 py-4 rounded-xl font-bold transition-all shadow-xl shadow-primary/40">
+                        Book a Session Now
+                    </button>
+<button class="bg-slate-800 hover:bg-slate-700 text-white px-10 py-4 rounded-xl font-bold transition-all">
+                        View Studio Tour
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-primary/10 bg-background-dark py-16 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<!-- Brand -->
+<div class="md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-primary">
+<svg class="w-8 h-8" fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.1288 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z"/></svg>
+</div>
+<span class="text-xl font-bold tracking-tight text-white uppercase">Aart Sense Records</span>
+</div>
+<p class="text-slate-500 max-w-sm leading-relaxed mb-6">The premiere destination for artists seeking more than just a recording. We craft sonic legacies.</p>
+<div class="flex gap-3">
+<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#"><span class="material-symbols-outlined text-lg">brand_awareness</span></a>
+<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#"><span class="material-symbols-outlined text-lg">music_note</span></a>
+<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#"><span class="material-symbols-outlined text-lg">play_circle</span></a>
+</div>
+</div>
+<!-- Navigate -->
+<div>
+<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-primary">Navigate</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="aboutus.html">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="faq.html">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="contactus.html">Contact</a></li>
+<li><a class="hover:text-primary transition-colors" href="investor.html">Investors</a></li>
+</ul>
+</div>
+<!-- Contact -->
+<div>
+<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-primary">Contact</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">mail</span> studio@aartsense.com</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">call</span> +1 (323) 555-0192</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">location_on</span> Los Angeles, CA 90013</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">schedule</span> 10:00 AM — 10:00 PM</li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
+<p>© 2026 Aart Sense Records. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-primary transition-colors" href="privacy-policy.html">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="terms.html">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script src="main.js"></script>
+</body></html>

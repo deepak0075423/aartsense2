@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQ | Aart Sense Records</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8c25f4",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#191022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="site-header">
+<div class="header-inner">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="w-8 h-8" fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.1288 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z"/></svg>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white uppercase">Aart Sense</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="aboutus.html">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="services.html">Services</a>
+<a class="text-sm font-medium text-primary font-bold" data-nav-link href="faq.html">FAQ</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="contactus.html">Contact</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="investor.html">Investors</a>
+</nav>
+<div class="flex items-center gap-4">
+<a href="contactus.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg font-bold text-sm transition-all shadow-lg shadow-primary/20">
+                    Book Session
+                </a>
+<button class="md:hidden p-2 rounded-lg hover:bg-primary/10 text-primary transition-colors" data-menu-toggle aria-label="Toggle menu">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden md:hidden" data-mobile-menu>
+<nav class="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-4">
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="aboutus.html">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="services.html">Services</a>
+<a class="text-sm font-medium text-primary py-2" data-nav-link href="faq.html">FAQ</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="contactus.html">Contact</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="investor.html">Investors</a>
+<a href="contactus.html" class="bg-primary text-white px-6 py-3 rounded-lg text-sm font-bold text-center mt-2">Book Now</a>
+</nav>
+</div>
+<main class="max-w-5xl mx-auto px-6 py-12">
+<!-- Hero Section -->
+<section class="mb-12 text-center">
+<h2 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 mb-4 tracking-tight">How can we help you create?</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">Find answers to common questions about our world-class recording facilities and production services.</p>
+</section>
+<!-- Search Bar -->
+<div class="mb-12">
+<div class="relative max-w-3xl mx-auto">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary/60">search</span>
+<input class="w-full h-14 pl-12 pr-4 rounded-xl bg-slate-200/50 dark:bg-primary/10 border-none focus:ring-2 focus:ring-primary text-slate-900 dark:text-slate-100 placeholder:text-slate-500 dark:placeholder:text-slate-400" data-faq-search placeholder="Search for questions about booking, specs, or mixing..." type="text"/>
+</div>
+</div>
+<!-- Category Tabs -->
+<div class="flex overflow-x-auto pb-4 gap-4 mb-10 border-b border-slate-200 dark:border-primary/20 scrollbar-hide">
+<button class="flex items-center gap-2 px-6 py-3 rounded-t-lg border-b-2 border-primary text-primary font-bold whitespace-nowrap" data-faq-tab="booking">
+<span class="material-symbols-outlined">calendar_today</span> Booking
+            </button>
+<button class="flex items-center gap-2 px-6 py-3 rounded-t-lg border-b-2 border-transparent text-slate-500 dark:text-slate-400 hover:text-primary transition-all whitespace-nowrap" data-faq-tab="technical">
+<span class="material-symbols-outlined">mic</span> Technical Specs
+            </button>
+<button class="flex items-center gap-2 px-6 py-3 rounded-t-lg border-b-2 border-transparent text-slate-500 dark:text-slate-400 hover:text-primary transition-all whitespace-nowrap" data-faq-tab="mixing">
+<span class="material-symbols-outlined">tune</span> Mixing &amp; Mastering
+            </button>
+<button class="flex items-center gap-2 px-6 py-3 rounded-t-lg border-b-2 border-transparent text-slate-500 dark:text-slate-400 hover:text-primary transition-all whitespace-nowrap" data-faq-tab="general">
+<span class="material-symbols-outlined">help</span> General Inquiries
+            </button>
+</div>
+<!-- FAQ Content (Booking Category Shown) -->
+<div class="space-y-4" data-faq-section="booking">
+<h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">calendar_month</span>
+                Booking &amp; Rates
+            </h3>
+<!-- Accordion Item 1 -->
+<div class="accordion-item group bg-slate-200/30 dark:bg-primary/5 rounded-xl border border-transparent hover:border-primary/30 transition-all overflow-hidden">
+<div class="accordion-header flex items-center justify-between p-6 select-none" tabindex="0">
+<h4 class="text-lg font-semibold text-slate-800 dark:text-slate-200">How do I book a studio session?</h4>
+<span class="material-symbols-outlined arrow-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 pb-6">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Booking can be done directly through our online portal by clicking the "Book Now" button in the navigation bar. You can view real-time availability for all our rooms (Studio A, B, and the Mastering Suite). A 50% deposit is required to secure your time slot.
+                    </p>
+</div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="accordion-item group bg-slate-200/30 dark:bg-primary/5 rounded-xl border border-transparent hover:border-primary/30 transition-all overflow-hidden">
+<div class="accordion-header flex items-center justify-between p-6 select-none" tabindex="0">
+<h4 class="text-lg font-semibold text-slate-800 dark:text-slate-200">What is your cancellation policy?</h4>
+<span class="material-symbols-outlined arrow-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 pb-6">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        We require at least 48 hours' notice for cancellations or rescheduling to receive a full refund of your deposit. Cancellations made with less than 48 hours' notice will forfeit the deposit.
+                    </p>
+</div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="accordion-item group bg-slate-200/30 dark:bg-primary/5 rounded-xl border border-transparent hover:border-primary/30 transition-all overflow-hidden">
+<div class="accordion-header flex items-center justify-between p-6 select-none" tabindex="0">
+<h4 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Are engineers included in the hourly rate?</h4>
+<span class="material-symbols-outlined arrow-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 pb-6">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Standard studio booking includes one assistant engineer. Lead recording engineers, mixing engineers, or session musicians can be booked at an additional hourly rate depending on the professional's level of experience.
+                    </p>
+</div>
+</div>
+<!-- Accordion Item 4 -->
+<div class="accordion-item group bg-slate-200/30 dark:bg-primary/5 rounded-xl border border-transparent hover:border-primary/30 transition-all overflow-hidden">
+<div class="accordion-header flex items-center justify-between p-6 select-none" tabindex="0">
+<h4 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Can I bring my own engineer?</h4>
+<span class="material-symbols-outlined arrow-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 pb-6">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Yes, you are welcome to bring your own engineer. However, a brief orientation with our staff engineer is required before the session starts to ensure they are familiar with our specific hardware routing and patch bays.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Technical Specs Section -->
+<div class="mt-16 space-y-4" data-faq-section="technical">
+<h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">settings_input_component</span>
+                Technical Specs
+            </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-6 bg-slate-200/30 dark:bg-primary/5 rounded-xl border border-primary/10">
+<h5 class="font-bold text-primary mb-2">Main DAW</h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Pro Tools Ultimate, Ableton Live 11 Suite, Logic Pro X</p>
+</div>
+<div class="p-6 bg-slate-200/30 dark:bg-primary/5 rounded-xl border border-primary/10">
+<h5 class="font-bold text-primary mb-2">Monitoring</h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">ATC SCM45A Pro, Yamaha NS-10M, Auratone 5C</p>
+</div>
+</div>
+<!-- Accordion for Technical Specs -->
+<div class="accordion-item group bg-slate-200/30 dark:bg-primary/5 rounded-xl border border-transparent hover:border-primary/30 transition-all overflow-hidden">
+<div class="accordion-header flex items-center justify-between p-6 select-none" tabindex="0">
+<h4 class="text-lg font-semibold text-slate-800 dark:text-slate-200">What sample rate and bit depth do you record at?</h4>
+<span class="material-symbols-outlined arrow-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 pb-6">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        We record at 24-bit / 48kHz as standard. For demanding projects such as film scoring or Dolby Atmos, we record at 32-bit float / 96kHz. All sessions are exported at your preferred format.
+                    </p>
+</div>
+</div>
+<div class="accordion-item group bg-slate-200/30 dark:bg-primary/5 rounded-xl border border-transparent hover:border-primary/30 transition-all overflow-hidden">
+<div class="accordion-header flex items-center justify-between p-6 select-none" tabindex="0">
+<h4 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Can I connect remotely to a live session?</h4>
+<span class="material-symbols-outlined arrow-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 pb-6">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Yes. We support Source Connect Standard and Sessionwire for low-latency remote direction. Our upload speed is 1Gbps fibre, ensuring crystal-clear communication and audio streaming.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Mixing & Mastering Section -->
+<div class="mt-16 space-y-4" data-faq-section="mixing" style="display:none">
+<h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">tune</span>
+                Mixing &amp; Mastering
+            </h3>
+<div class="accordion-item group bg-slate-200/30 dark:bg-primary/5 rounded-xl border border-transparent hover:border-primary/30 transition-all overflow-hidden">
+<div class="accordion-header flex items-center justify-between p-6 select-none" tabindex="0">
+<h4 class="text-lg font-semibold text-slate-800 dark:text-slate-200">How many revisions are included in a mix?</h4>
+<span class="material-symbols-outlined arrow-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 pb-6">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Our standard mixing package includes three full revisions. Additional revisions can be purchased at an hourly rate. We recommend providing detailed mix notes upfront to minimise revision rounds.
+                    </p>
+</div>
+</div>
+<div class="accordion-item group bg-slate-200/30 dark:bg-primary/5 rounded-xl border border-transparent hover:border-primary/30 transition-all overflow-hidden">
+<div class="accordion-header flex items-center justify-between p-6 select-none" tabindex="0">
+<h4 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Do you offer Dolby Atmos mastering?</h4>
+<span class="material-symbols-outlined arrow-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 pb-6">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Yes, our mastering suite is fully Dolby Atmos certified. We deliver ADM BWF files ready for Apple Music, Tidal, and Amazon Music HD. Stereo and spatial masters are delivered simultaneously.
+                    </p>
+</div>
+</div>
+</div>
+<!-- General Inquiries Section -->
+<div class="mt-16 space-y-4" data-faq-section="general" style="display:none">
+<h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">help</span>
+                General Inquiries
+            </h3>
+<div class="accordion-item group bg-slate-200/30 dark:bg-primary/5 rounded-xl border border-transparent hover:border-primary/30 transition-all overflow-hidden">
+<div class="accordion-header flex items-center justify-between p-6 select-none" tabindex="0">
+<h4 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Is parking available at the studio?</h4>
+<span class="material-symbols-outlined arrow-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 pb-6">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Yes, we have dedicated parking for up to 10 vehicles directly outside the studio. Additional public parking is available within a 2-minute walk at no extra cost.
+                    </p>
+</div>
+</div>
+<div class="accordion-item group bg-slate-200/30 dark:bg-primary/5 rounded-xl border border-transparent hover:border-primary/30 transition-all overflow-hidden">
+<div class="accordion-header flex items-center justify-between p-6 select-none" tabindex="0">
+<h4 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Do you cater food and beverages?</h4>
+<span class="material-symbols-outlined arrow-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 pb-6">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        We have a fully stocked kitchen and lounge area available to all clients. For longer sessions (4+ hours) we can arrange catering from local restaurants upon request. Please notify us at least 24 hours in advance.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Contact CTA -->
+<section class="mt-20 p-8 md:p-12 rounded-2xl bg-gradient-to-br from-primary to-purple-800 text-white text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 right-0 w-64 h-64 bg-slate-900 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+</div>
+<div class="relative z-10">
+<h3 class="text-3xl font-bold mb-4">Still have questions?</h3>
+<p class="text-white/80 mb-8 max-w-xl mx-auto">Our team is available 24/7 to help you with your production needs. Send us a message and we'll get back to you within the hour.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto px-8 py-4 bg-white text-primary font-bold rounded-xl hover:bg-slate-100 transition-colors shadow-lg">
+                        Get in Touch
+                    </button>
+<button class="w-full sm:w-auto px-8 py-4 bg-transparent border-2 border-white/30 text-white font-bold rounded-xl hover:bg-white/10 transition-colors">
+                        View Rates PDF
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-primary/10 bg-background-dark py-16 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<!-- Brand -->
+<div class="md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-primary">
+<svg class="w-8 h-8" fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.1288 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z"/></svg>
+</div>
+<span class="text-xl font-bold tracking-tight text-white uppercase">Aart Sense Records</span>
+</div>
+<p class="text-slate-500 max-w-sm leading-relaxed mb-6">The premiere destination for artists seeking more than just a recording. We craft sonic legacies.</p>
+<div class="flex gap-3">
+<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#"><span class="material-symbols-outlined text-lg">brand_awareness</span></a>
+<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#"><span class="material-symbols-outlined text-lg">music_note</span></a>
+<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#"><span class="material-symbols-outlined text-lg">play_circle</span></a>
+</div>
+</div>
+<!-- Navigate -->
+<div>
+<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-primary">Navigate</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="aboutus.html">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="faq.html">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="contactus.html">Contact</a></li>
+<li><a class="hover:text-primary transition-colors" href="investor.html">Investors</a></li>
+</ul>
+</div>
+<!-- Contact -->
+<div>
+<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-primary">Contact</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">mail</span> studio@aartsense.com</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">call</span> +1 (323) 555-0192</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">location_on</span> Los Angeles, CA 90013</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">schedule</span> 10:00 AM — 10:00 PM</li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
+<p>© 2026 Aart Sense Records. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-primary transition-colors" href="privacy-policy.html">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="terms.html">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script src="main.js"></script>
+</body></html>

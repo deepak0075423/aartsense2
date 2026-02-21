@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -32,25 +33,11 @@
             },
         }
     </script>
-<style>
-        .glass {
-            background: rgba(25, 16, 34, 0.6);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(140, 37, 244, 0.2);
-        }
-        .hero-gradient {
-            background: linear-gradient(to bottom, rgba(25, 16, 34, 0.4) 0%, rgba(25, 16, 34, 1) 100%);
-        }
-        body {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-    </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary/30">
 <!-- Top Navigation -->
-<header class="fixed top-0 w-full z-50 glass border-b border-primary/10">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<header class="site-header">
+<div class="header-inner">
 <div class="flex items-center gap-3">
 <div class="text-primary">
 <span class="material-symbols-outlined text-4xl">album</span>
@@ -58,23 +45,35 @@
 <h2 class="text-xl font-bold tracking-tight">Aart Sense Records</h2>
 </div>
 <nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#philosophy">Philosophy</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#services">Services</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#work">Work</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#space">The Space</a>
+<a class="text-sm font-medium text-primary" data-nav-link href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="aboutus.html">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="services.html">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="faq.html">FAQ</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="contactus.html">Contact</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" data-nav-link href="investor.html">Investors</a>
 </nav>
 <div class="flex items-center gap-4">
-<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all transform hover:scale-105">
+<a href="contactus.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all transform hover:scale-105">
                     Book a Session
-                </button>
-<div class="flex gap-2">
-<a class="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-all" href="#">
-<span class="material-symbols-outlined text-xl">brand_awareness</span>
-</a>
-</div>
+                </a>
+<button class="md:hidden p-2 rounded-lg hover:bg-primary/10 text-primary transition-colors" data-menu-toggle aria-label="Toggle menu">
+<span class="material-symbols-outlined">menu</span>
+</button>
 </div>
 </div>
 </header>
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden md:hidden" data-mobile-menu>
+<nav class="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-4">
+<a class="text-sm font-medium text-primary py-2" data-nav-link href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="aboutus.html">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="services.html">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="faq.html">FAQ</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="contactus.html">Contact</a>
+<a class="text-sm font-medium hover:text-primary transition-colors py-2" data-nav-link href="investor.html">Investors</a>
+<a href="contactus.html" class="bg-primary text-white px-6 py-3 rounded-lg text-sm font-bold text-center mt-2">Book a Session</a>
+</nav>
+</div>
 <!-- Immersive Hero Section -->
 <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
 <div class="absolute inset-0 z-0">
@@ -302,58 +301,57 @@
 </div>
 </div>
 </section>
-<!-- Newsletter & Footer -->
-<footer class="bg-black border-t border-white/5 py-20 px-6">
+<!-- Footer -->
+<footer class="border-t border-primary/10 bg-background-dark py-16 px-6">
 <div class="max-w-7xl mx-auto">
-<div class="grid md:grid-cols-4 gap-12 mb-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<!-- Brand -->
 <div class="md:col-span-2">
-<div class="flex items-center gap-3 mb-8">
+<div class="flex items-center gap-3 mb-6">
 <div class="text-primary">
-<span class="material-symbols-outlined text-4xl">album</span>
+<svg class="w-8 h-8" fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.1288 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z"/></svg>
 </div>
-<h2 class="text-2xl font-bold tracking-tight">Aart Sense Records</h2>
+<span class="text-xl font-bold tracking-tight text-white uppercase">Aart Sense Records</span>
 </div>
-<p class="text-slate-500 max-w-sm mb-8">
-                        The premiere destination for artists seeking more than just a recording. We craft sonic legacies.
-                    </p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#">
-<span class="material-symbols-outlined">brand_awareness</span>
-</a>
-<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#">
-<span class="material-symbols-outlined">video_library</span>
-</a>
-<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#">
-<span class="material-symbols-outlined">headset</span>
-</a>
+<p class="text-slate-500 max-w-sm leading-relaxed mb-6">The premiere destination for artists seeking more than just a recording. We craft sonic legacies.</p>
+<div class="flex gap-3">
+<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#"><span class="material-symbols-outlined text-lg">brand_awareness</span></a>
+<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#"><span class="material-symbols-outlined text-lg">music_note</span></a>
+<a class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" href="#"><span class="material-symbols-outlined text-lg">play_circle</span></a>
 </div>
 </div>
+<!-- Navigate -->
 <div>
-<h4 class="font-bold mb-6">Navigation</h4>
-<ul class="space-y-4 text-slate-500 text-sm">
-<li><a class="hover:text-primary transition-colors" href="#">Philosophy</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Services</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Artists</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">The Space</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-primary">Navigate</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="aboutus.html">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="faq.html">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="contactus.html">Contact</a></li>
+<li><a class="hover:text-primary transition-colors" href="investor.html">Investors</a></li>
 </ul>
 </div>
+<!-- Contact -->
 <div>
-<h4 class="font-bold mb-6">Join the Label</h4>
-<p class="text-sm text-slate-500 mb-6">Get production tips, studio updates, and featured tracks delivered to your inbox.</p>
-<form class="space-y-3">
-<input class="w-full bg-white/5 border-white/10 rounded-lg px-4 py-2.5 text-sm focus:border-primary focus:ring-0 transition-all" placeholder="Email Address" type="email"/>
-<button class="w-full bg-primary py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all">Subscribe</button>
-</form>
+<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-primary">Contact</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">mail</span> studio@aartsense.com</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">call</span> +1 (323) 555-0192</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">location_on</span> Los Angeles, CA 90013</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">schedule</span> 10:00 AM — 10:00 PM</li>
+</ul>
 </div>
 </div>
-<div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-12 border-t border-white/5 text-xs text-slate-600">
-<p>© 2024 Aart Sense Records. All Rights Reserved.</p>
+<!-- Bottom Bar -->
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
+<p>© 2026 Aart Sense Records. All Rights Reserved.</p>
 <div class="flex gap-8">
-<a class="hover:text-slate-400" href="#">Privacy Policy</a>
-<a class="hover:text-slate-400" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="privacy-policy.html">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="terms.html">Terms of Service</a>
 </div>
 </div>
 </div>
 </footer>
+<script src="main.js"></script>
 </body></html>
